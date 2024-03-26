@@ -17,5 +17,85 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F2EAE2;
+}
+
+.main {
+  margin: 0;
+  width: 343px;
+  height: 611px;
+
+  border-radius: 0 0 8px 8px;
+}
+.image {
+  border-radius: 8px 8px 0 0;
+}
+.card-content {
+  padding: 24px;
+  background-color: white;
+}
+.subtitle {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6C7289;
+  letter-spacing: 5px;
+}
+.title {
+  margin: 0;
+  margin-top: 12px;
+font-family: "Fraunces", serif;
+ font-weight: 700;
+ font-size: 2rem;
+ color: #1C232B;
+}
+.text {
+  margin: 0;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #1C232B;
+  line-height: 1.4375rem;
+}
+.price {
+  position: relative;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 12px;;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: #3D8168;
+}
+.price::after {
+  position: absolute;
+  content: attr(data-currency);
+  top: 12px;
+  left: 120px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  color: #1C232B;
+text-decoration: line-through;
+}
+.botton {
+position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: #3D8168;
+  padding: 15px;
+  border-radius: 8px;
+}
+.icon {
+position: absolute;
+top: 555px;
+left: 100px;
+}
+@media screen and (min-width:768px) {
+
+.card-content {
+  position: absolute;
+  top: 0;
+}
+
 }
